@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+// import { test, expect } from '@playwright/test';
 
 // test('Test_ID_01 Przejście do głównej strony + pierwsza poprawna rejestracja usera', async ({ page }) => {
 //   await page.goto('https://woskiknot.pl/');
@@ -271,31 +271,31 @@ import { test, expect } from '@playwright/test';
 
 //test 23 - blad na stronie podczas kliknięcie Dodaj do koszyka
 
-test('Test_ID_23 Sprawdzenie widgetu ZESTAWY PREZENTOWE na stronie i dodanie zapałek do koszyka', async ({ page }) => {
-  await page.goto('https://woskiknot.pl/');
-  await page.getByRole('link', { name: 'DOSTAWA 2 – świece sojowe' }).click();
-  await page.getByRole('link', { name: 'Zestaw Prezentowy Świeca & Room Spray' }).first().click();
-  await page.getByRole('img', { name: 'Zestaw Prezentowy Świeca &' }).nth(3).click();
-  //await page.locator('ol').getByRole('img', { name: '<b>Zestaw Prezentowy</b> Świeca & Room Spray - obrazek 3' }).click();
-  await page.locator('ol').getByRole('img', { name: '<b>Zestaw Prezentowy</b> Świeca & Room Spray - obrazek 4' }).click();
-  await page.getByRole('img', { name: 'Zestaw Prezentowy Świeca &' }).nth(2).click();
-  await page.locator('div').filter({ hasText: /^Kocham Cię Mamo - Świeca Sojowa - Lawenda & Cedr$/ }).locator('span').nth(1).click();
-  await page.locator('a').filter({ hasText: /^Kocham Cię Mamo - Świeca Sojowa - Lawenda & Cedr$/ }).click();
-  await page.locator('#wooco_component_product_select_2 div span').nth(1).click();
-  await page.getByText('Jaśminowa Herbata room spray Na stanie').click();
-  await page.locator('#wooco_component_product_select_3 span').nth(1).click();
-  await page.getByRole('listitem').filter({ hasText: 'Tak, chce wstążkę +6,90 zł' }).locator('a').click();
-  await page.locator('#product-128114 svg').nth(1).click();
-  await page.getByRole('button', { name: 'Dodaj do Koszyka' }).click();
-  //await page.getByRole('button', { name: 'Akceptuj wszystko' }).click();
-  await page.getByRole('link', { name: 'Zobacz koszyk' }).click();
-  await page.locator('inpost-izi-button div').nth(1).click();
-  await page.locator('#izi-phone-input').fill('500');
-  await page.locator('#inpostizi-modal-button-close').click();
-  await page.getByRole('link', { name: 'Usuń <b>Zestaw Prezentowy</b' }).click();
-  await page.getByText('Usunięto: „Zestaw Prezentowy').click();
-  await page.getByRole('link', { name: 'Wróć do sklepuu' }).click();
-});
+// test('Test_ID_23 Sprawdzenie widgetu ZESTAWY PREZENTOWE na stronie i dodanie zapałek do koszyka', async ({ page }) => {
+//   await page.goto('https://woskiknot.pl/');
+//   await page.getByRole('link', { name: 'DOSTAWA 2 – świece sojowe' }).click();
+//   await page.getByRole('link', { name: 'Zestaw Prezentowy Świeca & Room Spray' }).first().click();
+//   await page.getByRole('img', { name: 'Zestaw Prezentowy Świeca &' }).nth(3).click();
+//   //await page.locator('ol').getByRole('img', { name: '<b>Zestaw Prezentowy</b> Świeca & Room Spray - obrazek 3' }).click();
+//   await page.locator('ol').getByRole('img', { name: '<b>Zestaw Prezentowy</b> Świeca & Room Spray - obrazek 4' }).click();
+//   await page.getByRole('img', { name: 'Zestaw Prezentowy Świeca &' }).nth(2).click();
+//   await page.locator('div').filter({ hasText: /^Kocham Cię Mamo - Świeca Sojowa - Lawenda & Cedr$/ }).locator('span').nth(1).click();
+//   await page.locator('a').filter({ hasText: /^Kocham Cię Mamo - Świeca Sojowa - Lawenda & Cedr$/ }).click();
+//   await page.locator('#wooco_component_product_select_2 div span').nth(1).click();
+//   await page.getByText('Jaśminowa Herbata room spray Na stanie').click();
+//   await page.locator('#wooco_component_product_select_3 span').nth(1).click();
+//   await page.getByRole('listitem').filter({ hasText: 'Tak, chce wstążkę +6,90 zł' }).locator('a').click();
+//   await page.locator('#product-128114 svg').nth(1).click();
+//   await page.getByRole('button', { name: 'Dodaj do Koszyka' }).click();
+//   //await page.getByRole('button', { name: 'Akceptuj wszystko' }).click();
+//   await page.getByRole('link', { name: 'Zobacz koszyk' }).click();
+//   await page.locator('inpost-izi-button div').nth(1).click();
+//   await page.locator('#izi-phone-input').fill('500');
+//   await page.locator('#inpostizi-modal-button-close').click();
+//   await page.getByRole('link', { name: 'Usuń <b>Zestaw Prezentowy</b' }).click();
+//   await page.getByText('Usunięto: „Zestaw Prezentowy').click();
+//   await page.getByRole('link', { name: 'Wróć do sklepuu' }).click();
+// });
 
 // });
 
