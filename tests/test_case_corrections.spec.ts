@@ -10,7 +10,7 @@ test ('Test_ID_01_corection Go to the website and enter the data for registratio
 
   //WHEN - register an account with correct details
   await page.getByRole('textbox', { name: 'Adres e-mail Wymagane' }).click();
-  await page.getByRole('textbox', { name: 'Adres e-mail Wymagane' }).fill('but44619@laoia.com');
+  await page.getByRole('textbox', { name: 'Adres e-mail Wymagane' }).fill('ulf24616@laoia.com');
   await page.getByRole('textbox', { name: 'Hasło Wymagane' }).click();
   await page.getByRole('textbox', { name: 'Hasło Wymagane' }).fill('vyCzv68sEzTr4f');
   await page.getByRole('button', { name: 'Zarejestruj się' }).click();
